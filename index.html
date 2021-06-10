@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Frontend Mentor | Calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Title and toggler -->
+    <div class="calc-header">
+      <h3 class="header-text">calc</h3>
+      <div class="theme-menu">
+        <p>Theme</p>
+        <label for="theme-1" class="label">1<br>
+          <input type="radio" id="theme-1" onclick="changeCss('css/style2.css')" name="theme" ></input>
+        </label>
+        <label for="theme-2" class="label">2<br>
+          <input type="radio" id="theme-2" onclick="changeCss('css/style.css')" name="theme">
+        </label>
+        <label for="theme-3" class="label">3<br>
+          <input type="radio" id="theme-3" onclick="changeCss('css/style3.css')" name="theme">
+        </label>
+      </div>
+    </div>
+
+    <!-- input field -->
+    <div class="calc-input">
+      <input type="text" id="input-field" class="input">
+    </div>
+
+    <!-- calculator keys -->
+    <div class="input-keys">
+      <button class="key">7</button>
+      <button class="key">8</button>
+      <button class="key">9</button>
+      <button class="del key">Del</button>
+      <button class="key">4</button>
+      <button class="key">5</button>
+      <button class="key">6</button>
+      <button class="operator key">+</button>
+      <button class="key">1</button>
+      <button class="key">2</button>
+      <button class="key">3</button>
+      <button class="operator key">-</button>
+      <button class="key decimal">.</button>
+      <button class="key">0</button>
+      <button class="operator key">/</button>
+      <button class="operator key">x</button>
+      <button class="reset key">Reset</button>
+      <button class="operator equal key">=</button>
+    </div>
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Andy Ahwireng</a>.
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(268, 75%, 9%);
+}
+@media only screen and (min-width: 375px) and (max-width: 1444px) {
+  .container {
+    width: 30%;
+    height: auto;
+    margin: 3.046875rem auto;
+    color: hsl(0, 0, 100%);
+  }
+  .calc-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+  }
+  .header-text {
+    justify-content: flex-start;
+    font-size: 1.5rem;
+  }
+  .toggler {
+    display: flex;
+    flex-direction: row;
+  }
+  .theme-menu {
+    width: 11.34375rem;
+    height: 3.71875rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .theme-menu p {
+    padding: 12px;
+  }
+  label {
+    padding: 4px;
+  }
+  .calc-input {
+    width: 100%;
+    margin-bottom: 1.53125rem;
+  }
+  .input {
+    width: 100%;
+    height: 4.28125rem;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    font-size: 3rem;
+    padding: 6px;
+    background-color: hsl(268, 71%, 12%);
+    color: white;
+    text-align: end;
+  }
+  .input-keys {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    background-color: hsl(268, 71%, 12%);
+    border-radius: 12px;
+    padding: 12px;
+  }
+  .key {
+    cursor: pointer;
+    width: 85%;
+    margin: 5px 6px;
+    padding: 4px 5px;
+    font-size: 20px;
+    border-radius: 12px;
+    border: none;
+    color: hsl(52, 100%, 62%);
+    background-color: hsl(281, 89%, 26%);
+    box-shadow: 0 1px hsl(285, 91%, 52%);
+  }
+  .reset,
+  .del {
+    background-color: hsl(268, 47%, 21%);
+    box-shadow: 0 1px hsl(290, 70%, 36%);
+    color: white;
+  }
+  .reset {
+    width: 90%;
+    grid-column: 1 / 3;
+  }
+  .equal {
+    grid-column: 3 / 5;
+  }
+  .equal {
+    width: 90%;
+    background-color: hsl(176, 100%, 44%);
+    box-shadow: 0 1px hsl(177, 92%, 70%);
+    color: hsl(198, 20%, 13%);
+  }
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    color: white;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+    color: rgb(190, 105, 130);
+    text-decoration: none;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 480px) {
+  .container {
+    width: 50%;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 868px) {
+  .container {
+    width: 50%;
+  }
+}
